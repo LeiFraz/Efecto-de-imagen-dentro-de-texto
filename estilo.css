@@ -1,0 +1,44 @@
+:root{
+    /*USO DE VARIABLES EN CSS*/
+    --fondo-oscuro: #000000;
+    --fuente-primaria: 'Secular One', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fuente-primaria);
+    background-color: #ffffff;
+}
+
+.encabezado{
+    /*background: #ffffff;*/
+    background: var(--fondo-oscuro);
+    min-height: 100vh; /*para que abarque el 100% del alto de la pantalla*/
+    display: flex;
+    align-items: center; /*recordar que esto sirve para que los elementos de adentro esten centrados*/
+}
+
+.texto{
+    width: 100%;
+    color: transparent;
+    /*color: rgba(124, 253, 242, 0.5);*/
+    text-align: center;
+    text-transform: uppercase; /*para que todo sea mayusculas en el texto*/
+    font-size: 200px;
+    font-weight: bold;
+
+    /*al ser una etiqueta h1 tambien se le puede agregar un fondo*/
+    background-image: url('imagenesPrueba/goku.jpg');
+    background-size: cover; /*hace que la imagen se adapte al ancho del contenedor donde está*/
+    background-position-y: center;/*top, buttom, center, 100px, 400px*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*hace que el background elegido se ponga dentro del texto, ya sea la imagen, o el color.*/
+
+}
+
